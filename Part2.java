@@ -1,4 +1,19 @@
-
+/*'Program Info
+'----------------------------------------------------------------------------
+/*
+'Program:   Part2.java
+'Date:      02/15/2021
+'Author:    Mashuk Chowdhury
+'Operation: Finding a gene from a DNA strand (Coursera Course :Java Programming: Solving Problems with Software)
+'-----------------------------------------------------------------------------
+'Change Log 
+'-----------------------------------------------------------------------------
+'Date           Programmer          Change
+'-----------------------------------------------------------------------------
+02/15/2021    Mashuk Chowdhury    Initial Version
+*
+* 
+*/
 public class Part2 {
 	//I haven't defined testSimpleGene, as Eclipse requires a main class to execute the program.
 	public static void main(String[] args) {
