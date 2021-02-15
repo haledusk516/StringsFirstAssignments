@@ -51,11 +51,11 @@ public class Part1 {
 		String result = "";
 		int startCodon = dna.indexOf("ATG");
 		int stopCodon = dna.indexOf("TAA",startCodon+3);
-		if (startCodon == -1 && stopCodon == -1){
+		if (startCodon == -1 && stopCodon == -1){    //if both start and stop codons are absent
 			return "No ATG or TAA";
-		}else if (startCodon == -1) {
+		}else if (startCodon == -1) {          //if start codon is absent
 			return "No ATG";
-		}else if (stopCodon == -1){
+		}else if (stopCodon == -1){          //if stop codon is absent
 			return "No TAA";
 		}else
 		{
@@ -65,7 +65,7 @@ public class Part1 {
 		     return result;
 		  }
             else {
-                return "Invalid Strain";
+                return "Invalid Strain";        //if the remainder doesn't yield 0, this is an invalid strand
             }
         }
 	
