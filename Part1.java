@@ -16,7 +16,7 @@
 */
 
 public class Part1 {
-	//I haven't defined testSimpleGene, as Eclipse requires a main class to execute the program.
+	//I haven't defined testSimpleGene, as Eclipse requires a main class to execute the program. Check README.txt for more info.
 	public static void main(String[] args) {
 		String gene = " ";
 		
