@@ -1,4 +1,5 @@
-# java-stuff
+# Programming Exercise: Finding a Gene and Web Links
+
 <> Hi everyone! Hope you find these solutions helpful. 
 This is from Week 2 of the Coursera Course: Java Programming: Solving Problems with Software. 
 You will find that my code is different than the requirements in the questions. 
