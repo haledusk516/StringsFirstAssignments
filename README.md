@@ -4,7 +4,8 @@
 This is from Week 2 of the Coursera Course: Java Programming: Solving Problems with Software. 
 You will find that my code is different than the requirements in the questions. 
 This is because my code is optimized for Eclipse users who are taking this course and agree BlueJ is a terrible IDE. 
-Anyways good luck in the course! <>
+Anyways good luck in the course!
+Also if you want to setup Eclipse for this course. Check this out: https://www.coursera.org/learn/java-programming/discussions/weeks/1/threads/EigBIYDvEeevZApsRonn6A <>
 
 Part 1: Finding a Gene - Using the Simplified Algorithm
 This assignment is to write the code from the lesson from scratch by following the steps below. This will help you see if you really understood how to put the code together, and might identify a part that you did not fully understand. If you get stuck, then you can go back and watch the coding videos that go with this lesson again. We recommend you try this with many of the future Java coding examples before starting programming exercises.
