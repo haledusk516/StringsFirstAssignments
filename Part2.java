@@ -17,34 +17,93 @@
 public class Part2 {
 	//I haven't defined testSimpleGene, as Eclipse requires a main class to execute the program.
 	public static void main(String[] args) {
-		String gene = null;
+		String gene = " ";
 		String startCodon = "ATG";  //start and stop codons have been defined to pass it on to function findSimpleGene as a parameter
 		String stopCodon = "TAA";
 		
-		String dna = "ATGAAATACCAGTACCACTAAGGAT";
+		String dna = "ATGATATACCAGTACCACTAAGGAT";
 		System.out.println("The DNA stand is " +dna);
+		if (dna.equals(dna.toUpperCase())) {                  /*checks if dna is uppercase*/                 
+			startCodon = startCodon.toUpperCase();              /*if yes, converts parameters to uppercase*/
+			stopCodon = stopCodon.toUpperCase();
+			gene = gene.toUpperCase();                          // gene is being converted to uppercase
+			}else if (dna.equals(dna.toLowerCase())){          /*checks if dna is lowercase*/
+				startCodon = startCodon.toLowerCase();         /*if yes, converts parameters to lowercase*/
+				stopCodon = stopCodon.toLowerCase();
+			gene = gene.toLowerCase();                       // gene is being converted to lowercase
+			}
+		gene = findSimpleGene(dna,startCodon,stopCodon);
+		System.out.println(gene);         //valid
+		
+		
+		
+		dna = "atgatataccagtaccactaaggat";
+		System.out.println("The DNA stand is " +dna);
+		if (dna.equals(dna.toUpperCase())) {
+			startCodon = startCodon.toUpperCase();
+			stopCodon = stopCodon.toUpperCase();
+			gene = gene.toUpperCase();
+			}else if (dna.equals(dna.toLowerCase())){ 
+				startCodon = startCodon.toLowerCase();
+				stopCodon = stopCodon.toLowerCase();
+			gene = gene.toLowerCase();
+			}
 		gene = findSimpleGene(dna,startCodon,stopCodon);
 		System.out.println(gene);         //valid
 		
 		dna = "GTCTAAAAGTACCAACGGA";
 		System.out.println("The DNA stand is " +dna);
+		if (dna.equals(dna.toUpperCase())) {
+			startCodon = startCodon.toUpperCase();
+			stopCodon = stopCodon.toUpperCase();
+			gene = gene.toUpperCase();
+			}else if (dna.equals(dna.toLowerCase())){ 
+				startCodon = startCodon.toLowerCase();
+				stopCodon = stopCodon.toLowerCase();
+			gene = gene.toLowerCase();
+			}
 		gene = findSimpleGene(dna,startCodon,stopCodon);
 		System.out.println(gene);         //no TAA
 		
 		dna = "CTCGAAGACAATCCAAT";
 		System.out.println("The DNA stand is " +dna);
+		if (dna.equals(dna.toUpperCase())) {
+			startCodon = startCodon.toUpperCase();
+			stopCodon = stopCodon.toUpperCase();
+			gene = gene.toUpperCase();
+			}else if (dna.equals(dna.toLowerCase())){ 
+				startCodon = startCodon.toLowerCase();
+				stopCodon = stopCodon.toLowerCase();
+			gene = gene.toLowerCase();
+			}
 		gene = findSimpleGene(dna,startCodon,stopCodon);
 		System.out.println(gene);        //no ATG or TAA
 		
 		dna = "ATCATGATGACCGTGGTTGAC";
 		System.out.println("The DNA stand is " +dna);
+		if (dna.equals(dna.toUpperCase())) {
+			startCodon = startCodon.toUpperCase();
+			stopCodon = stopCodon.toUpperCase();
+			gene = gene.toUpperCase();
+			}else if (dna.equals(dna.toLowerCase())){ 
+				startCodon = startCodon.toLowerCase();
+				stopCodon = stopCodon.toLowerCase();
+			gene = gene.toLowerCase();
+			}
 		gene = findSimpleGene(dna,startCodon,stopCodon);
 		System.out.println(gene);         //no TAA
 		
 		dna = "ATGCGCAGCGTAA";
-		startCodon = "ATG";
-		stopCodon = "TAA";
 		System.out.println("The DNA stand is " +dna);
+		if (dna.equals(dna.toUpperCase())) {
+			startCodon = startCodon.toUpperCase();
+			stopCodon = stopCodon.toUpperCase();
+			gene = gene.toUpperCase();
+			}else if (dna.equals(dna.toLowerCase())){ 
+				startCodon = startCodon.toLowerCase();
+				stopCodon = stopCodon.toLowerCase();
+			gene = gene.toLowerCase();
+			}
 		gene = findSimpleGene(dna,startCodon,stopCodon);
 		System.out.println(gene);         //Invalid
 		
@@ -75,10 +134,11 @@ public class Part2 {
                 return "Invalid Strain";
             }
         }
+		
+		
+	
 	
 		
 	}
 
 }
-
-
